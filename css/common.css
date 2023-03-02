@@ -383,10 +383,10 @@ button:focus {
 
   .footer_area .inner p,
   .footer_area .inner p span {
-    line-height: 30px;
+    line-height: 25px;
     text-align: center;
     font-size: 11px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
 
   .footer_area .inner p span {
