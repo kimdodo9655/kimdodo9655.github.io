@@ -74,6 +74,7 @@ canvas {
   padding: 15px 20px;
   font-size: 18px;
   font-family: 'neo_eb';
+  background-color: #fff;
 }
 
 .search_box input {
@@ -140,7 +141,7 @@ canvas {
   }
 
   .search_box input {
-    width: calc(100% - 160px);
+    width: calc(100% - 145px);
     height: 60px;
     box-sizing: border-box;
     border: 0;
@@ -155,13 +156,13 @@ canvas {
   }
 
   .search_box button {
-    width: 60px;
+    width: 45px;
     height: 60px;
   }
 
   .search_box button img {
     width: 30px;
     height: 30px;
-    padding: 15px;
+    padding: 15px 15px 15px 0;
   }
 }
