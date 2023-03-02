@@ -302,6 +302,7 @@ button:focus {
     text-align: center;
     font-size: 14px;
     color: #fff;
+    line-height: 18px;
   }
 
   .nav_area .inner ul .sign_area_mob a {
