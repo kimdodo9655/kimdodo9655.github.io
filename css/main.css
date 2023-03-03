@@ -167,7 +167,7 @@ canvas {
   width: 100%;
   height: auto;
   background-color: #eee;
-  display: inline-block;
+  float: left;
 }
 
 .book_area .inner .book_inner .book_box {
@@ -181,18 +181,19 @@ canvas {
 }
 
 .book_area .inner .book_inner .book_box img {
-  width: 100%;
+  width: 248px;
+  height: 350px;
   box-sizing: border-box;
   border: 10px solid #bcb5a9;
 }
 
-.book_area .inner .book_inner p {
+.book_area .inner .book_inner > p {
   float: left;
   width: 248px;
   margin-right: 40px;
 }
 
-.book_area .inner .book_inner p:nth-of-type(5) {
+.book_area .inner .book_inner > p:nth-of-type(5) {
   margin-right: 0;
 }
 
