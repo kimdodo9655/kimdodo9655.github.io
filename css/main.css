@@ -146,7 +146,7 @@ canvas {
 .book_area {
   width: 100%;
   height: auto;
-  background-color: #999;
+  background-color: #ddd;
 }
 
 .book_area .inner {
@@ -156,10 +156,17 @@ canvas {
   padding: 40px 0;
 }
 
+.book_area .inner h2 {
+  font-size: 34px;
+  font-family: 'neo_eb';
+  color: #635845;
+  margin: 20px 0 40px 0;
+}
+
 .book_area .inner .book_inner {
   width: 100%;
   height: auto;
-  background-color: #666;
+  background-color: #eee;
   display: inline-block;
 }
 
@@ -175,6 +182,18 @@ canvas {
 
 .book_area .inner .book_inner .book_box img {
   width: 100%;
+  box-sizing: border-box;
+  border: 10px solid #bcb5a9;
+}
+
+.book_area .inner .book_inner p {
+  float: left;
+  width: 248px;
+  margin-right: 40px;
+}
+
+.book_area .inner .book_inner p:nth-of-type(5) {
+  margin-right: 0;
 }
 
 @media (max-width: 700px) {
