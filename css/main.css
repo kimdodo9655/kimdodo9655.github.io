@@ -146,55 +146,195 @@ canvas {
 .book_area {
   width: 100%;
   height: auto;
-  background-color: #ddd;
 }
 
 .book_area .inner {
   width: 1400px;
   height: auto;
   margin: 0 auto;
-  padding: 40px 0;
+  padding-top: 60px;
+}
+
+.book_area.best_book .inner {
+  padding-bottom: 30px;
+}
+
+.book_area.new_book .inner {
+  padding-bottom: 60px;
 }
 
 .book_area .inner h2 {
   font-size: 34px;
   font-family: 'neo_eb';
   color: #635845;
-  margin: 20px 0 40px 0;
+  margin-bottom: 40px;
 }
 
 .book_area .inner .book_inner {
   width: 100%;
   height: auto;
-  background-color: #eee;
-  float: left;
+  display: inline-block;
 }
 
-.book_area .inner .book_inner .book_box {
+/* 베스트 */
+
+.book_area.best_book .inner .book_inner .book_box {
   float: left;
   width: 248px;
   margin-right: 40px;
 }
 
-.book_area .inner .book_inner .book_box:nth-of-type(5) {
+.book_area.best_book .inner .book_inner .book_box:nth-of-type(5) {
   margin-right: 0;
 }
 
-.book_area .inner .book_inner .book_box img {
+.book_area.best_book .inner .book_inner .book_box img {
   width: 248px;
   height: 350px;
   box-sizing: border-box;
-  border: 10px solid #bcb5a9;
+  border: 10px solid #d4cdc2;
 }
 
-.book_area .inner .book_inner > p {
+.book_area.best_book .inner .book_inner .book_box h4 {
+  width: 100%;
+  font-size: 21px;
+  color: #988e7e;
+  font-family: 'neo_eb';
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: block;
+
+  margin: 20px 0 10px 0;
+}
+
+.book_area.best_book .inner .book_inner .book_box p {
+  width: 100%;
+  font-size: 16px;
+  color: #333333;
+  font-family: 'neo_r';
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: block;
+}
+
+/* 신착 */
+
+.book_area.new_book .inner .book_inner .book_box {
   float: left;
-  width: 248px;
+  width: 200px;
   margin-right: 40px;
 }
 
-.book_area .inner .book_inner > p:nth-of-type(5) {
+.book_area.new_book .inner .book_inner .book_box:nth-of-type(6) {
   margin-right: 0;
+}
+
+.book_area.new_book .inner .book_inner .book_box img {
+  width: 200px;
+  height: 280px;
+  box-sizing: border-box;
+  border: 10px solid #d4cdc2;
+}
+
+.book_area.new_book .inner .book_inner .book_box h4 {
+  width: 100%;
+  font-size: 18px;
+  color: #988e7e;
+  font-family: 'neo_eb';
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: block;
+
+  margin: 15px 0 7px 0;
+}
+
+.book_area.new_book .inner .book_inner .book_box p {
+  width: 100%;
+  font-size: 16px;
+  color: #333333;
+  font-family: 'neo_r';
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: block;
+}
+
+/* 도서분류 */
+
+.category_area {
+  width: 100%;
+  height: auto;
+  background-color: #ebe6dd;
+}
+
+.category_area .inner {
+  width: 1400px;
+  height: auto;
+  margin: 0 auto;
+  padding: 80px 0;
+}
+
+.category_area .inner .category_box {
+  width: 100%;
+  height: auto;
+  display: inline-block;
+}
+
+.category_area .inner h2 {
+  font-size: 34px;
+  font-family: 'neo_eb';
+  color: #635845;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.category_area .inner a {
+  display: block;
+  float: left;
+  width: 113px;
+  height: 113px;
+  margin-right: 30px;
+}
+
+.category_area .inner a:nth-of-type(10) {
+  margin-right: 0;
+}
+
+.category_area .inner a div {
+  width: 113px;
+  height: 113px;
+  box-sizing: border-box;
+  border: 5px solid #cabca7;
+  border-radius: 61px;
+  background-color: #ffffff;
+}
+
+.category_area .inner a div:hover {
+  border: 5px solid #635845;
+  background-color: #988e7e;
+}
+
+.category_area .inner a div:hover p,
+.category_area .inner a div:hover p span {
+  color: #fff;
+}
+
+.category_area .inner a div p {
+  font-family: 'neo_eb';
+  font-size: 16px;
+  text-align: center;
+  color: #988e7e;
+  line-height: 30px;
+  margin-top: 23px;
+}
+
+.category_area .inner a div span {
+  font-family: 'neo_hb';
+  font-size: 21px;
+  color: #635845;
 }
 
 @media (max-width: 700px) {
@@ -270,5 +410,126 @@ canvas {
 
   .notice_area .inner a {
     font-size: 14px;
+  }
+
+  /* book area */
+
+  .book_area .inner {
+    width: calc(100% - 30px);
+    padding: 40px 15px;
+  }
+
+  .book_area.best_book .inner {
+    padding-bottom: 15px;
+  }
+
+  .book_area.new_book .inner {
+    padding-bottom: 30px;
+  }
+
+  .book_area .inner h2 {
+    font-size: 21px;
+    margin-bottom: 30px;
+  }
+
+  /* 베스트 */
+
+  .book_area.best_book .inner .book_inner {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+
+  .book_area.best_book .inner .book_inner .book_box {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .book_area.best_book .inner .book_inner .book_box:nth-of-type(5) {
+    margin-right: 0;
+  }
+
+  .book_area.best_book .inner .book_inner .book_box a {
+    width: 100%;
+    display: inline-block;
+  }
+
+  .book_area.best_book .inner .book_inner .book_box a > * {
+    float: left;
+  }
+
+  .book_area.best_book .inner .book_inner .book_box img {
+    width: 120px;
+    height: 170px;
+    border: 5px solid #d4cdc2;
+    margin-right: 20px;
+  }
+
+  .book_area.best_book .inner .book_inner .book_box h4 {
+    width: calc(100% - 140px);
+    font-size: 21px;
+    color: #988e7e;
+    font-family: 'neo_eb';
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block;
+
+    margin: 20px 0 10px 0;
+  }
+
+  .book_area.best_book .inner .book_inner .book_box p {
+    width: calc(100% - 140px);
+    font-size: 16px;
+    color: #333333;
+    font-family: 'neo_r';
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block;
+  }
+
+  /* 신착 */
+
+  .book_area.new_book .inner .book_inner .book_box {
+    float: left;
+    width: 200px;
+    margin-right: 40px;
+  }
+
+  .book_area.new_book .inner .book_inner .book_box:nth-of-type(6) {
+    margin-right: 0;
+  }
+
+  .book_area.new_book .inner .book_inner .book_box img {
+    width: 200px;
+    height: 280px;
+    box-sizing: border-box;
+    border: 10px solid #d4cdc2;
+  }
+
+  .book_area.new_book .inner .book_inner .book_box h4 {
+    width: 100%;
+    font-size: 18px;
+    color: #988e7e;
+    font-family: 'neo_eb';
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block;
+
+    margin: 15px 0 7px 0;
+  }
+
+  .book_area.new_book .inner .book_inner .book_box p {
+    width: 100%;
+    font-size: 16px;
+    color: #333333;
+    font-family: 'neo_r';
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block;
   }
 }
