@@ -508,8 +508,9 @@ button:focus {
   /* 서브페이지 템플릿 */
 
   .subpage_wrap {
-    min-height: none;
+    min-height: 0;
     padding: 60px 15px;
+    box-sizing: border-box;
   }
 
   .subpage_wrap .inner {
