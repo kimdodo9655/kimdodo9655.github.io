@@ -504,4 +504,20 @@ button:focus {
     height: 40px;
     font-size: 14px;
   }
+
+  /* 서브페이지 템플릿 */
+
+  .subpage_wrap {
+    min-height: none;
+    padding: 60px 15px;
+  }
+
+  .subpage_wrap .inner {
+    width: 100%;
+  }
+
+  .subpage_wrap .inner h2 {
+    font-size: 21px;
+    margin-bottom: 30px;
+  }
 }
